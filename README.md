@@ -18,15 +18,13 @@ sudo apt install ros-$ROS_DISTRO-turtlebot3 ros-$ROS_DISTRO-turtlebot3-gazebo
 Gazebo world
 
 `
-rm -rf ~/hackathon_ws/src/turtlebot3_autorace_2020
+cd ~/hackathon_ws/src
+
+git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_autorace.git
 
 cd ~/hackathon_ws
 
-rm -rf build/ install/ log/
-
 colcon build
-
-source /opt/ros/humble/setup.bash
 
 source install/setup.bash
 
