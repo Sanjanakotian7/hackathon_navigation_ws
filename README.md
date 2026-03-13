@@ -19,11 +19,18 @@ Gazebo world
 
 `
 rm -rf ~/hackathon_ws/src/turtlebot3_autorace_2020
+
 cd ~/hackathon_ws
+
 rm -rf build/ install/ log/
+
 colcon build
+
 source /opt/ros/humble/setup.bash
+
 source install/setup.bash
+
 export TURTLEBOT3_MODEL=waffle
+
 ros2 launch turtlebot3_gazebo turtlebot3_autorace_2020.launch.py
 `
